@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* Header */
+.py-4 {
+    background-color: #d84315;
+    color: white;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+.admin-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    padding: 40px 60px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+/* Lado izquierdo */
+.admin-left {
+    flex: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.admin-left h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.logo_perfil{
+    width: 300px;
+}
+
+/* Lado derecho */
+.admin-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.admin-slogan {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.admin-slogan h3 {
+    font-size: 20px;
+    color: #d84315;
+    margin: 0;
+}
+
+.slogan-line {
+    height: 4px;
+    width: 100px;
+    background-color: #0071e3;
+    margin-top: 8px;
+    border-radius: 4px;
+}
+
+/* Acciones */
+.admin-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* <-- 2 columnas */
+    gap: 30px; /* <-- Más separación */
+    margin-top: 30px;
+}
+
+.card {
+    height: 100px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.card i {
+    font-size: 20px;
+    color: #d84315;
+    margin-bottom: 5px;
+}
+
+.card span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* FOOTER STYLES */
+.complet-footer {
+    background-color: #111;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer-complet .container-foot {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.social-link a,
+.social-link2 a {
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link a:hover,
+.social-link2 a:hover {
+    transform: scale(1.1);
+}
+
+.social-link i {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.logo-pago {
+    width: 40px;
+    height: auto;
+    border-radius: 6px;
+    background-color: white;
+    padding: 4px;
+}
+
+.Derechos {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .social-link a,
+    .social-link2 a {
+        margin: 0 5px;
+    }
+}

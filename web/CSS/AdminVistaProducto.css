@@ -1,0 +1,339 @@
+/* Estilos generales */
+:root {
+    --primary-color: #0071e3;
+    --primary-hover: #005bb5;
+    --text-color: #333;
+    --bg-color: #f5f7fa;
+    --surface-color: #fff;
+    --border-color: #e0e0e0;
+    --border-radius: 12px;
+    --shadow: 0 10px 30px rgba(0,0,0,0.07);
+    --transition: all 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Header */
+.py-4{
+    background-color: #d84315;
+    color: white
+}
+
+nav {
+    background-color: #fff3e0; /* Naranjado claro pastel */
+    color: #212121; /* Texto oscuro para buen contraste */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body-categoria:hover {
+    background-color: #010508;
+}
+
+.navbar-custom {
+    background-color: #fff8e1;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo a {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu a {
+    margin: 0 15px;
+    color: white !important;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #aaaaaa;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    font-size: 1.25rem;
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: var(--surface-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-radius: var(--border-radius);
+    padding: 10px 0;
+    min-width: 160px;
+    z-index: 1001;
+    transition: var(--transition);
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-menu li {
+    padding: 8px 20px;
+    list-style: none;
+}
+
+.dropdown-menu li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: block;
+}
+
+.dropdown-menu li:hover {
+    background-color: #f5f5f5;
+}
+
+/* Main content */
+.main_COMBO {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 7rem 50px 50px;
+}
+
+.IMG_COMBO figure {
+    margin: 0;
+}
+
+.IMG_COMBO img {
+    max-width: 350px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.IMG_COMBO img:hover {
+    transform: scale(1.02);
+}
+
+.DSCP_COMBO {
+    max-width: 500px;
+    background-color: var(--surface-color);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.DSCP_COMBO h1 {
+    font-size: 1.75rem;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.DSCP_COMBO label {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Formulario de actualización */
+#form-actualizar {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.info-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background-color: #f8f8f8;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.info-row:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-row span:first-child {
+    font-weight: 600;
+    color: var(--text-color);
+    min-width: 50px;
+}
+
+.readonly-input {
+    flex: 1;
+    width: 190px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    color: #555;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.readonly-input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.2);
+}
+
+.edit-btn {
+    padding: 0.5rem 1rem;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: var(--transition);
+}
+
+.edit-btn:hover {
+    background-color: var(--primary-hover);
+    transform: translateY(-1px);
+}
+
+.edit-btn:active {
+    transform: translateY(0);
+}
+
+.edit-btn i {
+    font-size: 0.9rem;
+}
+
+.success-msg {
+    display: block;
+    margin-top: -0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    color: #28a745;
+    font-size: 0.85rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.success-msg.show {
+    opacity: 1;
+}
+
+/* Modo edición */
+.info-row.editing .readonly-input {
+    background-color: white;
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 2px rgba(0, 113, 227, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main_COMBO {
+        flex-direction: column;
+        padding: 6rem 1.5rem 2rem;
+        gap: 2rem;
+    }
+    
+    .IMG_COMBO img {
+        max-width: 280px;
+    }
+    
+    .DSCP_COMBO {
+        padding: 1.5rem;
+    }
+    
+    .info-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .edit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nav-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container {
+        padding: 0 1rem;
+    }
+    
+    .logo a {
+        font-size: 1.1rem;
+    }
+    
+    .logo img {
+        height: 25px;
+    }
+    
+    .DSCP_COMBO h1 {
+        font-size: 1.5rem;
+    }
+}

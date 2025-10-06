@@ -1,0 +1,142 @@
+/* Contenedor principal */
+main {
+    display: flex;
+    justify-content: center;  /* Centrado horizontal */
+    align-items: center;      /* Centrado vertical */
+    min-height: 40vh;        /* Ocupa al menos toda la altura visible */
+    padding: 20px;            /* Espacio alrededor */
+    box-sizing: border-box;   /* Incluye padding en dimensiones */
+}
+.table-container {
+
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.table-container h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+    margin-bottom: 25px;
+}
+
+/* Tabla */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+    border-collapse: collapse;
+}
+
+/* Cabecera de tabla */
+.table-header {
+    background: linear-gradient(135deg, #3498db, #2c3e50);
+    color: white;
+}
+
+.table-header th {
+    padding: 12px 15px;
+    text-align: left;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Filas de tabla */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(52, 152, 219, 0.05);
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Celdas */
+.table td {
+    padding: 12px 15px;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+
+/* Celda de total */
+.total-cell {
+    font-weight: 700;
+    color: #27ae60;
+    text-align: right;
+}
+
+/* Bordes de tabla */
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .table-container {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    .table-header th {
+        padding: 8px 10px;
+        font-size: 0.75rem;
+    }
+
+    .table td {
+        padding: 8px 10px;
+        font-size: 0.85rem;
+    }
+}
+
+/* Estilos para los estados del pedido */
+.estado-pedido {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.badge {
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.bg-success {
+    background-color: #28a745 !important;
+}
+
+.bg-danger {
+    background-color: #dc3545 !important;
+}
+/* Si usas Bootstrap, puedes simplificar usando sus clases de badge */
+
+.acciones {
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn-cambiar-estado {
+    margin-left: 8px;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+}
+
+.badge {
+    padding: 0.35rem 0.65rem;
+}

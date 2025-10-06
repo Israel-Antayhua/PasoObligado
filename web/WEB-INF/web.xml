@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>ProductoControlador</servlet-name>
+        <servlet-class>Controlador.ProductoControlador</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>DetalleVentasControlador</servlet-name>
+        <servlet-class>Controlador.DetalleVentasControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProductoControlador</servlet-name>
+        <url-pattern>/ProductoControlador</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>DetalleVentasControlador</servlet-name>
+        <url-pattern>/DetalleVentasControlador</url-pattern>
+    </servlet-mapping>
+    
+    //UsuariosControlador
+    <servlet>
+        <servlet-name>UsuariosControlador</servlet-name>
+        <servlet-class>Controlador.UsuariosControlador</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UsuariosControlador</servlet-name>
+        <url-pattern>/UsuariosControlador</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>AdminControlador</servlet-name>
+        <servlet-class>Controlador.AdminControlador</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AdminControlador</servlet-name>
+        <url-pattern>/AdminControlador</url-pattern>
+    </servlet-mapping>
+    
+   
+</web-app>

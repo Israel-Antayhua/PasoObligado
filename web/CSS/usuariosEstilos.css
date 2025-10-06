@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #000; /* fondo general negro */
+    color: #fff;
+    height: 100vh;
+}
+.py-4{
+    background-color: #000;
+    color: white
+}
+
+/* Header */
+.header-perfil {
+    background-color: #1f1f1f; /* gris oscuro */
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+}
+.header-perfil .empresa-nombre {
+    height: 20px;
+    margin-left: 20px;
+}
+.header-perfil .logo {
+    height: 40px;
+
+}
+
+.header-perfil .empresa-nombre {
+    height: 20px;
+    right: 20px;
+}
+
+/* Contenedor del formulario */
+.create-account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0c0c0c;
+    background-image: url(../MULTIMEDIA/INTERFACE/fuego1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #000;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.04);
+    text-align: center;
+}
+
+/* Títulos */
+.login-container h1 {
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+/* Inputs */
+.login-container input[type="text"],
+.login-container input[type="password"],
+.login-container input[type="email"],
+.login-container input[type="date"],
+.login-container input[type="submit"]
+{
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #2c2c2c;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Botón */
+.login-container input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #0071e3;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-container input[type="submit"]:hover {
+    background-color: #005bb5;
+}
+
+/* Enlace */
+.login-container p a {
+    color: #8ab4f8;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.login-container p a:hover {
+    text-decoration: underline;
+}
+
+/* Mensaje de error */
+.error-message {
+    color: #ff4d4d;
+    margin-top: 15px;
+    font-size: 14px;
+}
+/* FOOTER STYLES */
+
+.mt-5 {
+    background-color: #010508;
+    color: white;
+    padding: 20px 0;
+    
+}
+
+.col-md-3 h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #444;
+}
+
+.col-md-3 a{
+    color: #fff;
+    text-decoration: none;
+}
+.complet-footer {
+    background-color: #111;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', sans-serif;
+    padding: 40px 0 20px;
+    margin-top: 60px;
+    font-size: 14px;
+}
+
+.footer-complet .container-foot {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.footer-links {
+    flex: 1 1 200px;
+}
+
+.footer-links h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: #fff;
+}
+
+.social-link a,
+.social-link2 a {
+    margin-right: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-link a:hover,
+.social-link2 a:hover {
+    transform: scale(1.1);
+}
+
+.social-link i {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.logo-pago {
+    width: 40px;
+    height: auto;
+    border-radius: 6px;
+    background-color: white;
+    padding: 4px;
+}
+
+.Derechos {
+    text-align: center;
+    margin-top: 30px;
+    color: #888;
+    font-size: 13px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .social-link a,
+    .social-link2 a {
+        margin: 0 5px;
+    }
+}
