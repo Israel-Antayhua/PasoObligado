@@ -9,5 +9,5 @@ package Controlador;
  * @author samue
  */
 public class xd {
-    
+    int numero;
 }
